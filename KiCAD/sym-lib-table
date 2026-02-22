@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Stm32_Test-rescue")(type "KiCad")(uri "${KIPRJMOD}/Stm32_Test-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "MyLib")(type "Legacy")(uri "${KIPRJMOD}/MyLib.lib")(options "")(descr ""))
+)
