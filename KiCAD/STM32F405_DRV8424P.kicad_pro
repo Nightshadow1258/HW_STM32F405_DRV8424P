@@ -593,7 +593,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "STM32F405_DRV8424P.step",
       "svg": "",
       "vrml": ""
     },

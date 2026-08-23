@@ -1,0 +1,65 @@
+# Path to the input CSV file
+# Option 1: Specify a single file
+input_file: input/DRV8424_USBC5V_(VM)_(A1).csv #input/DRV8424_9V_(VM)_(A1).csv
+
+# Option 2: Specify multiple files
+# input_files:
+#   - input/plot1.csv
+#   - input/plot2.csv
+
+# If neither is specified, all CSVs in the input/ folder will be processed
+# input_file: input/input.csv
+
+# Channel selection options:
+# Specify channels to plot: ["CH1"], ["CH2"], or ["CH1", "CH2"]
+# Leave empty [] to plot all available channels
+channels_to_plot:
+  - "CH1"
+  - "CH2"
+
+# Header cleanup rules (strings to remove from column names)
+header_cleanup:
+  - "Ave. (C)"
+  - "(C)"
+
+# Plot formatting options (default settings)
+plot_format:
+  size:
+    width: 12
+    height: 7.5
+  font_sizes:
+    axis: 14
+    title: 16
+    legend: 12
+    ticks: 12
+  grid:
+    major:
+      color: "#808080"
+      linestyle: ":"
+      linewidth: 0.8
+    minor:
+      color: "#A8A8A8"
+      linestyle: ":"
+      linewidth: 0.5
+  axis_labels:
+    x: "Time [s]"
+    y: "Voltage [V]"
+  plot_title: "Oscilloscope Measurement"
+
+# Time window in seconds [start, end]
+# Leave empty or omit to plot full range
+time_window: [-0.02, 0.04]
+
+# Output directory (optional — defaults to "output/")
+# output_dir: output
+
+# save_formats: 
+# image formats to save, supported formats include: "jpeg", "png", "pdf", "svg"
+# data formats to save, supported formats include: "csv", "xlsx"
+save_formats:
+  image:
+    - "jpeg"
+    - "pdf"
+  data:
+    # - "csv"
+    # - "xlsx"
